@@ -1,4 +1,7 @@
 @extends('layouts.frontend-master')
+@section('title')
+    Shopmama E-com
+@endsection
 
 @section('frontend-content')
 <div class="body-content outer-top-xs" id="top-banner-and-menu">

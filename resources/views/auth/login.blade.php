@@ -1,4 +1,7 @@
 @extends('layouts.frontend-master')
+@section('title')
+    Shopmama E-com Login
+@endsection
 
 @section('frontend-content')
     <div class="breadcrumb">
