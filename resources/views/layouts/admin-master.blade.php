@@ -35,6 +35,7 @@
     <link href="{{ asset('admin') }}/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="{{ asset('admin') }}/lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="{{ asset('admin') }}/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+
     <link href="{{ asset('admin') }}/lib/rickshaw/rickshaw.min.css" rel="stylesheet">
 
     <link href="{{ asset('admin') }}/lib/highlightjs/github.css" rel="stylesheet">
@@ -46,6 +47,9 @@
     <link href="{{ asset('admin') }}/lib/summernote/summernote-bs4.css" rel="stylesheet">
 
     <link href="{{ asset('admin') }}/lib/spectrum/spectrum.css" rel="stylesheet">
+
+    <!-- input tag CSS -->
+    <link rel="stylesheet" href="{{ asset('common') }}/input_tag/bootstrap-tagsinput.css">
 
     <!-- Starlight CSS -->
     <link rel="stylesheet" href="{{ asset('admin') }}/css/starlight.css">
@@ -77,6 +81,9 @@
     <script src="{{ asset('admin') }}/lib/bootstrap/bootstrap.js"></script>
     <script src="{{ asset('admin') }}/lib/jquery-ui/jquery-ui.js"></script>
     <script src="{{ asset('admin') }}/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+    <!-- tag input -->
+    <script src="{{ asset('common') }}/input_tag/bootstrap-tagsinput.min.js"></script>
 
     <script>
         $(function () {
@@ -165,6 +172,35 @@
         });
     </script>
 
+    <script src="{{ asset('admin') }}/lib/medium-editor/medium-editor.js"></script>
+    <script src="{{ asset('admin') }}/lib/summernote/summernote-bs4.min.js"></script>
+    <script>
+        $(function() {
+            'use strict';
+
+            // Inline editor
+            var editor = new MediumEditor('.editable');
+
+            // Summernote editor
+            $('#summernote').summernote({
+                height: 150,
+                tooltip: false
+            })
+            $('#summernote2').summernote({
+                height: 150,
+                tooltip: false
+            })
+            $('#summernote3').summernote({
+                height: 150,
+                tooltip: false
+            })
+            $('#summernote4').summernote({
+                height: 150,
+                tooltip: false
+            })
+        });
+    </script>
+
 
     <script src="{{ asset('admin') }}/lib/jquery.sparkline.bower/jquery.sparkline.min.js"></script>
     <script src="{{ asset('admin') }}/lib/d3/d3.js"></script>
@@ -179,23 +215,7 @@
     <script src="{{ asset('admin') }}/js/ResizeSensor.js"></script>
     <script src="{{ asset('admin') }}/js/dashboard.js"></script>
 
-    <script src="{{ asset('admin') }}/lib/medium-editor/medium-editor.js"></script>
-    <script src="{{ asset('admin') }}/lib/summernote/summernote-bs4.min.js"></script>
 
-    <script>
-      $(function(){
-        'use strict';
-
-        // Inline editor
-        var editor = new MediumEditor('.editable');
-
-        // Summernote editor
-        $('#summernote').summernote({
-          height: 150,
-          tooltip: false
-        })
-      });
-    </script>
 
     <script src="{{ asset('common/toastr/toastr.min.js') }}"></script>
     {{-- toaster message start --}}

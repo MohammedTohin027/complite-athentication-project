@@ -6,6 +6,7 @@
                     class="icon ion-navicon-round"></i></a></div>
     </div><!-- sl-header-left -->
 
+    <a href="{{ url('/') }}" target="blank" style="color: white"><i class="icon ion-ios-person-outline"></i> Visit Site</a>
     <a href="{{ route('all.user.view') }}" style="color: white"><i class="icon ion-ios-person-outline"></i> All Users</a>
 
     <div class="sl-header-right">
