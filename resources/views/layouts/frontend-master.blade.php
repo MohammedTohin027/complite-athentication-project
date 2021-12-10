@@ -14,7 +14,7 @@
     <title>@yield('title')</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ secure_asset('frontend') }}/assets/css/bootstrap.min.css">
 
     <!-- Customizable CSS -->
     <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/main.css">
